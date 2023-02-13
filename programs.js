@@ -188,3 +188,63 @@ function fibonacci(n) {
         };
         console.log(sortWithReduce(arr));
         
+        function add_dash_bet_two_evendidgits(num){
+            let str=num.toString();
+            let result ='';
+
+            for(let i=0;i<str.length;i++){
+                if(parseInt(str[i])% 2=== 0 && parseInt(str[i+1])%2 === 0){
+result += str[i]+'-';
+                }else{
+result+=str[i]
+                }
+            }
+       return result     
+        }
+    console.log(add_dash_bet_two_evendidgits(9977223467884))
+
+
+//     let arry = [1, 2, 3, 4, 5];
+// let firstElement = arry[0];
+//  let lastElement = arry[arry.length-1];
+// console.log(firstElement);
+// console.log(lastElement);
+
+// let firstElement1 = arry.shift();
+// let lastElement1 = arry.pop();
+// console.log(firstElement1);
+// console.log(lastElement1);
+
+
+const data = [['a', 1], ['b', 2]];
+console.log(Object.fromEntries(data));
+const result = [];
+
+const object = (data)=>(data).reduce((acc,value)=>{
+   if(Array.isArray(value)) {
+      acc[value[0]= value[1]];
+   }
+   console.log(acc)
+})
+
+// const a=data.split['[',']']
+// console.log(a)
+
+const data1 = [0, 1, false, 2, undefined, '', 3, null]
+
+const arr2= data1.filter(e=> e || e === 0)
+
+console.log(arr2);
+
+let a1 = [1,2,3,4];
+let b1 = [5,6,7];
+
+let sum = [];
+
+for(let i = 0; i < Math.max(a1.length,b1.length); i++)
+{
+
+   sum.push((a1[i] || 0) + ( b1[i]) || 0);
+}
+
+console.log(sum);
